@@ -1,0 +1,30 @@
+@import "src/utils/colors.scss";
+
+.ProfileInformation {
+  &__avatar {
+    pointer-events: none;
+    @media only screen and (max-width: 991px) {
+      text-align: center;
+    }
+  }
+
+  &__details{
+    background: rgba($color-blue, .70);;
+    padding: 20px 15px;
+
+    &--label {
+      font-size: 18px;
+      font-weight: bold;
+      color: darken($color-blue, 20%);
+      border-bottom: 1px solid $color-white;
+      transition:all 0.3s ease-in-out;
+      &:hover {
+        color: rgba($color-red, .70);
+      }
+    }
+
+    &--data {
+      color: $color-white;
+    }
+  }
+}

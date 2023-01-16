@@ -1,0 +1,55 @@
+@import "src/utils/colors.scss";
+
+.ProfileEdit {
+
+  &__avatar {
+    @media only screen and (max-width: 991px) {
+      text-align: center;
+    }
+
+    &--info {
+      font-size: 14px;
+      font-style: italic;
+    }
+  }
+
+  &__details{
+    background: rgba($color-blue, .70);;
+    padding: 20px 15px;
+
+      &--label {
+        font-size: 18px;
+        font-weight: bold;
+        color: darken($color-blue, 20%);
+        border-bottom: 1px solid $color-white;
+        transition:all 0.3s ease-in-out;
+        &:hover {
+          color: rgba($color-red, .70);
+        }
+      }
+
+      &--data {
+        color: $color-white;
+      }
+
+      &--save-button {
+        width: 100%;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        margin-top: 20px;
+        font-size: 18px;
+        color: $color-white;
+        background: lighten($color-blue, 30%);
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          background: darken($color-blue, 10%);
+        }
+      }
+
+      .srv-validation-message {
+        margin-top: 5px;
+        color: $color-red;
+      }
+
+  }
+}
